@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qiniu.qlive.activity.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/signupPhoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="手机号码"
+            android:phoneNumber="true" />
+
+        <EditText
+            android:id="@+id/signupUserNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="用户名" />
+
+        <EditText
+            android:id="@+id/signupEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="邮箱"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signupPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="密码"
+            android:password="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_button_selector"
+                android:onClick="SignupAction"
+                android:text="注册"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

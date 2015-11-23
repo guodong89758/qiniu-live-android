@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qiniu.qlive.activity.LiveInfoActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/stream_title_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/stream_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/stream_info_padding"
+            android:layout_marginTop="@dimen/stream_info_padding"
+            android:text="@string/stream_quality"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/stream_quality_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/stream_info_padding"
+            android:layout_marginTop="@dimen/stream_info_padding"
+            android:text="@string/stream_orientation"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/stream_orientation_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cast_button_selector"
+            android:onClick="startRecord"
+            android:text="@string/start_record"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+</RelativeLayout>

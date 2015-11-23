@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_dark"
+    tools:context="com.qiniu.qlive.activity.live.SWCodecCameraStreamingActivity">
+
+    <com.pili.pldroid.streaming.widget.AspectFrameLayout
+        android:id="@+id/cameraPreview_afl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/cameraPreview_surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </com.pili.pldroid.streaming.widget.AspectFrameLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        android:id="@+id/camera_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pldroid_streaming_item_padding"
+        android:src="@mipmap/ic_action_switch_camera"
+        android:textColor="@color/pldroid_streaming_white" />
+
+    <ImageButton
+        android:id="@+id/torch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/pldroid_streaming_item_padding"
+        android:layout_marginTop="@dimen/pldroid_streaming_item_padding"
+        android:src="@mipmap/ic_action_flash_on"
+        android:textColor="@color/pldroid_streaming_white"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/capture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/pldroid_streaming_item_padding"
+        android:layout_marginRight="@dimen/pldroid_streaming_item_padding"
+        android:src="@mipmap/ic_action_crop"
+        android:textColor="@color/pldroid_streaming_white" />
+
+    <include layout="@layout/status" />
+
+    <include layout="@layout/camera_button_holder" />
+</RelativeLayout>

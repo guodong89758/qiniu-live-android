@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">QLive</string>
+
+    <string name="action_logout">退出账号</string>
+    <string name="action_login">已有账号，去登录</string>
+    <string name="action_signup">没有账号，去注册</string>
+
+    <string name="title_section_stream">直播节目</string>
+    <string name="title_section_video">点播节目</string>
+    <string name="title_section_channel">我的频道</string>
+
+    <string name="title_activity_main">七牛直播秀</string>
+    <string name="title_activity_login">账号登录</string>
+    <string name="title_activity_signup">账号注册</string>
+
+    <string name="title_activity_live_info">直播信息</string>
+    <string name="title_activity_my_live_video_list">我的录制记录</string>
+    <string name="title_activity_stream_play">直播播放</string>
+    <string name="title_activity_video_play">点播播放</string>
+
+    <string name="stream_title">节目标题</string>
+    <string name="stream_quality">录制品质</string>
+    <string name="stream_orientation">录制方向</string>
+    <string name="start_record">开始录制</string>
+
+    <string name="string_state_ready">准备好</string>
+    <string name="string_state_preparing">准备中</string>
+    <string name="string_state_connecting">连接中</string>
+    <string name="string_state_streaming">推流中</string>
+    <string name="string_state_netblocking">网络故障, 停止</string>
+    <string name="string_state_con_timeout">连接超时</string>
+
+    <string name="flash_light_on">开</string>
+    <string name="flash_light_off">关</string>
+
+    <string-array name="stream_quality_list">
+        <item>普通</item>
+        <item>标清</item>
+        <item>高清</item>
+        <item>超高清</item>
+    </string-array>
+    <string-array name="stream_orientation_list">
+        <item>横拍</item>
+        <item>竖拍</item>
+    </string-array>
+
+</resources>

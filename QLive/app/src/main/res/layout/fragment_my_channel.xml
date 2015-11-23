@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qiniu.qlive.fragment.MyChannelFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_person" />
+
+            <TextView
+                android:id="@+id/user_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/show_my_records_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="我的录制记录" />
+
+        <Button
+            android:id="@+id/start_publish_video_sw_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="开始视频直播(软编)" />
+
+        <!--
+        <Button
+            android:id="@+id/start_publish_video_hw_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="开始视频直播(硬编)" />
+
+        <Button
+            android:id="@+id/start_publish_audio_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="开始音频直播" />
+
+            -->
+    </LinearLayout>
+
+</FrameLayout>
