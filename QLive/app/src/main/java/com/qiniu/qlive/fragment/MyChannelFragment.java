@@ -62,9 +62,9 @@ public class MyChannelFragment extends Fragment implements View.OnClickListener,
         //this.startPublishAudioButton = (Button) v.findViewById(R.id.start_publish_audio_btn);
 
         this.showMyRecordsButton.setOnClickListener(this);
-        this.startPublishVideoHWButton.setOnClickListener(this);
+        //this.startPublishVideoHWButton.setOnClickListener(this);
         this.startPublishVideoSWButton.setOnClickListener(this);
-        this.startPublishVideoHWButton.setOnClickListener(this);
+        //this.startPublishVideoHWButton.setOnClickListener(this);
 
         this.userNameTextView = (TextView) v.findViewById(R.id.user_name_textview);
 
