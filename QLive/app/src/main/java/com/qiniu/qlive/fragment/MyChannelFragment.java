@@ -57,9 +57,9 @@ public class MyChannelFragment extends Fragment implements View.OnClickListener,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_my_channel, container, false);
         this.showMyRecordsButton = (Button) v.findViewById(R.id.show_my_records_btn);
-        this.startPublishVideoHWButton = (Button) v.findViewById(R.id.start_publish_video_hw_btn);
+        // this.startPublishVideoHWButton = (Button) v.findViewById(R.id.start_publish_video_hw_btn);
         this.startPublishVideoSWButton = (Button) v.findViewById(R.id.start_publish_video_sw_btn);
-        this.startPublishAudioButton = (Button) v.findViewById(R.id.start_publish_audio_btn);
+        //this.startPublishAudioButton = (Button) v.findViewById(R.id.start_publish_audio_btn);
 
         this.showMyRecordsButton.setOnClickListener(this);
         this.startPublishVideoHWButton.setOnClickListener(this);
